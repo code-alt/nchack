@@ -69,7 +69,7 @@ font-family: 'Roboto', sans-serif;
 
 require __DIR__ . "/vendor/autoload.php";
 
-$dotenv = Dotenv\Dotenv::createImmutable("/home/runner/nchack/.to");
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $weather_key = $_ENV["WEATHER"];
